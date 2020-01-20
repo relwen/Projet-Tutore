@@ -34,8 +34,10 @@
         </div>
         <div class="card">
             <div class="body">
-                <form id="" method="POST">
-                    <div class="msg">Sign in to start your session</div>
+
+                <form id="" action="/home" method="POST">
+                
+                    <div class="msg">Connecter vous maintenant</div>
                     <div class="input-group">
                         <span class="input-group-addon">
                             <i class="material-icons">person</i>
@@ -58,7 +60,7 @@
                             <label for="rememberme">Remember Me</label>
                         </div>
                         <div class="col-xs-4">
-                            <button class="btn btn-block bg-pink waves-effect" type="submit">SIGN IN</button>
+                            <button class="btn btn-block bg-pink waves-effect" type="submit">Connexion</button>
                         </div>
                     </div>
                     <div class="row m-t-15 m-b--20">

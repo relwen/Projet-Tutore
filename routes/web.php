@@ -11,19 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('enseignents.enreg_enseig');
-});
+Route::get('/', [
+	'as'=>'login',
+	'uses'=>'PagesController@login'
+]);
+
+Route::get('/home',[
+	'as'=>'dashboard',
+	'uses'=>'PagesController@home'
+]);
 
 
-Route::get('login', function () {
-    return view('auth.login.login');
-});
+Auth::routes();
 
 
-Route::get('sign_up', function () {
-    return view('auth.signUp.sign_up');
-});
+
 
 
 
