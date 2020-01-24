@@ -32,14 +32,16 @@
     <link href="{{ asset('css/all-themes.css') }}" rel="stylesheet" />
 </head>
 
-<body >
+<body class="theme-light-blue">
 
 
     <!-- Normalement je fais les inclusions  -->
 
-    @include('layouts.partials.__sidenav')
+    @include('layouts.partials._loader')
+    @include('layouts.partials._topBar')
+    @include('layouts.partials._leftSidebar')
+    @include('layouts.partials._rightSidebar')
     
-    @include('layouts.partials.__leftnav')
 
     <!-- Mon partials side nav et mon top nav -->
 

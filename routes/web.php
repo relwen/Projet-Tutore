@@ -22,6 +22,13 @@ Route::get('/home',[
 ]);
 
 
+// Route enseignents accueil
+Route::get('/enseignants',[
+	'as'=>'enseig',
+	'uses'=>'PagesController@enseig'
+]);
+
+
 Auth::routes();
 
 
